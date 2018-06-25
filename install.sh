@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -f /usr/local/bin/remote_syslog ]; then
+    echo "File found!"
+    exit 0
+fi
+
 mkdir syslog_tmp
 cd syslog_tmp
 
@@ -22,7 +27,6 @@ export PATH=/usr/local/bin/remote_syslog:$PATH
 
 echo "====== Copying config files ======"
 sudo cp example_config.yml /etc/log_files.yml
-sudo vi /etc/log_files.yml
 wait
 
 sudo service remote_syslog restart
