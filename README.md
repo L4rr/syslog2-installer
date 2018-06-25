@@ -7,14 +7,14 @@ Tested on Ubuntu 14.04
 
 # Installation
 ```
-sudo bash<( curl -fsSL https://raw.githubusercontent.com/jellene4eva/syslog2-installer/master/install.sh )
+sudo bash<( curl -fsSL https://raw.githubusercontent.com/L4rr/syslog2-installer/master/install.sh )
 ```
 * Downloads and extract tar.gz from [remote_syslog2/releases](https://github.com/papertrail/remote_syslog2/releases)
 * Copy the precompiled remote_syslog2 into `/usr/local/bin`
 * Downloads and insert remote_syslog's init.d configuration into `/etc/init.d/remote_syslog`
 * Update system to start service automatically during reboot
 * Export `remote_syslog` command to PATH
-* Copies example_config.yml provided into default `/etc/log_files.yml` and opens it
+* Copies example_config.yml provided into default `/etc/log_files.yml` 
 * Restarts the service
 * Deletes the tmp dir
 
